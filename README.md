@@ -14,8 +14,18 @@ This repository contains a Test Driven Development (TDD) exercise based on a pas
 
 The password checker also returns the reason why a password isn't valid.
 
-Once the exercise is completed, imagine there is a new requirement and you have to add a check password for admins that requires the use of numbers. With the approach we complete the first assignment, we can see it is very easy to add this requirement, while keeping all our tests and functionality.
+Once the exercise is completed, imagine there is a new requirement and you have to add a check password for admins that requires the use of numbers. With the approach I used to complete the first assignment, it is very easy to add this requirement, while keeping all my tests and functionality.
 
 ---
 
 ## Different types of doubles with Jest
+In the project there is a directory called `doubles` where I exprimented with the different kinds of modules available in Jest.
+
+The first two, `stub` and `fake` are pretty simple and there are only a few examples with them.
+
+Mocks and spies are more complex so I made more examples for them.
+
+In the `test/doubles` directory there are two files. 
+- `OtherUtils.test.ts` contains examples of Mocks and Spies being used to track callbacks and to mimic behaviour of functions.
+
+- `MockModules.test.ts` mocks the entire `OtherUtils.ts` module and also has an example on how to mock a external library such as `uuid`.

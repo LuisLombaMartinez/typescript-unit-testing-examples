@@ -53,10 +53,21 @@ describe('PasswordChecker test suite', () => {
         expect(actual.reasons).not.toContain(PasswordErrors.NO_SPECIAL_CHARACTERS);
     });
 
-    test('Password with all requirements is OK', () => {
+    test('Password with all requirements is valid', () => {
         const actual = sut.checkPassword("Abc123_·!");
         expect(actual.valid).toBe(true);
         expect(actual.reasons).toHaveLength(0);
+    });
+
+    test('Admin password with no number is invalid', () => {
+        const actual = sut.checkAdminPassword("Abc_·!");
+        expect(actual.valid).toBe(false);
+        expect(actual.reasons).toContain(PasswordErrors.NO_NUMBER);
+    });
+
+    test('Admin password with number is OK', () => {
+        const actual = sut.checkAdminPassword("Abc_·!1");
+        expect(actual.reasons).not.toContain(PasswordErrors.NO_NUMBER);
     });
 
 });

@@ -29,3 +29,10 @@ In the `test/doubles` directory there are two files.
 - `OtherUtils.test.ts` contains examples of Mocks and Spies being used to track callbacks and to mimic behaviour of functions.
 
 - `MockModules.test.ts` mocks the entire `OtherUtils.ts` module and also has an example on how to mock a external library such as `uuid`.
+
+---
+
+## Server app
+This section of the project is based on a project developed by Alex Horea for his course [Unit Testing for Typescript & NodeJs Developers with Jest](https://www.udemy.com/course/unit-testing-typescript-nodejs/).
+
+This part 

@@ -4,9 +4,6 @@ import { Account } from "../model/AuthModel";
 import { HTTP_CODES, HTTP_METHODS } from "../model/ServerModel";
 import { getRequestBody } from "../utils/Utils";
 
-
-
-
 export class LoginHandler {
 
     private request: IncomingMessage;
@@ -41,7 +38,7 @@ export class LoginHandler {
                 this.response.writeHead(HTTP_CODES.CREATED, { 'Content-Type': 'application/json' });
                 this.response.write(JSON.stringify({token}));
             } else {
-                this.response.statusCode = HTTP_CODES.NOT_fOUND;
+                this.response.statusCode = HTTP_CODES.NOT_FOUND;
                 this.response.write(JSON.stringify('wrong username or password'));
             }
             return;
@@ -50,5 +47,4 @@ export class LoginHandler {
         this.response.writeHead(HTTP_CODES.BAD_REQUEST, { 'Content-Type': 'application/json' });
         this.response.write(JSON.stringify('userName and password required'));
     }
-
 }

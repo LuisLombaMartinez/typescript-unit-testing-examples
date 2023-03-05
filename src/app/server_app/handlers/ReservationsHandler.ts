@@ -91,7 +91,7 @@ export class ReservationsHandler {
                 this.response.writeHead(HTTP_CODES.OK, { 'Content-Type': 'application/json' });
                 this.response.write(JSON.stringify(reservation));
             } else {
-                this.response.statusCode = HTTP_CODES.NOT_fOUND;
+                this.response.statusCode = HTTP_CODES.NOT_FOUND;
                 this.response.write(JSON.stringify(`Reservation with id ${id} not found`));
             }
         } else {
@@ -124,7 +124,7 @@ export class ReservationsHandler {
                     ));
                 }
             } else {
-                this.response.statusCode = HTTP_CODES.NOT_fOUND;
+                this.response.statusCode = HTTP_CODES.NOT_FOUND;
                 this.response.write(JSON.stringify(`Reservation with id ${id} not found`));
             }
         } else {

@@ -27,7 +27,6 @@ export class RegisterHandler {
         }
     }
 
-
     private async handlePost() {
         const requestBody: Account = await getRequestBody(this.request);
         if(requestBody.userName && requestBody.password) {

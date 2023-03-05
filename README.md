@@ -11,3 +11,5 @@ This repository contains a Test Driven Development (TDD) exercise based on a pas
 - It must contain one uppercase letter
 - It must contain one lowercase letter
 - It must contain a special character
+
+The password checker also returns the reason why a password isn't valid.

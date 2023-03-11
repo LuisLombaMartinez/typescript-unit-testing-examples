@@ -35,4 +35,4 @@ In the `test/doubles` directory there are two files.
 ## Server app
 This section of the project is based on a project developed by Alex Horea for his course [Unit Testing for Typescript & NodeJs Developers with Jest](https://www.udemy.com/course/unit-testing-typescript-nodejs/).
 
-This part consists of project in the `src/app/server_app` folder and our goal is to develop Jest tests to check the behaviour of the given project.
+This part consists of the project in the `src/app/server_app` folder and our goal is to develop Jest tests to check the behaviour of the given project.

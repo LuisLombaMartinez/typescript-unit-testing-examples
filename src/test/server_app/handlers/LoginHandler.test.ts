@@ -2,7 +2,7 @@ import { IncomingMessage, ServerResponse, STATUS_CODES } from "http";
 import { Authorizer } from "../../../app/server_app/auth/Authorizer";
 import { LoginHandler } from "../../../app/server_app/handlers/LoginHandler"
 import { Account } from "../../../app/server_app/model/AuthModel";
-import { HTTP_CODES, HTTP_METHODS } from "../../../app/server_app/model/ServerModel";
+import { HTTP_CODES } from "../../../app/server_app/model/ServerModel";
 
 
 const getRequestBodyMock = jest.fn();

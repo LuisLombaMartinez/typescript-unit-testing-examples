@@ -36,3 +36,11 @@ In the `test/doubles` directory there are two files.
 This section of the project is based on a project developed by Alex Horea for his course [Unit Testing for Typescript & NodeJs Developers with Jest](https://www.udemy.com/course/unit-testing-typescript-nodejs/).
 
 This part consists of the project in the `src/app/server_app` folder and our goal is to develop Jest tests to check the behaviour of the given project.
+
+### Server app tests
+
+This project has been tested using two approaches, London and Chicago.
+
+The London approach aims to test every class in the project independently, so it needs to use a lot of mocks to avoid dependencies. This approach can be seen in `src/test/server_app`.
+
+On the other hand, the Chicago approach aims to test functionality of modules, so it has lower mock usage since it will have more dependencies. This approach can be seen in `src/test/server_app2`.

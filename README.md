@@ -44,3 +44,7 @@ This project has been tested using two approaches, London and Chicago.
 The London approach aims to test every class in the project independently, so it needs to use a lot of mocks to avoid dependencies. This approach can be seen in `src/test/server_app`.
 
 On the other hand, the Chicago approach aims to test functionality of modules, so it has lower mock usage since it will have more dependencies. This approach can be seen in `src/test/server_app2`.
+
+#### Integration tests
+
+In this part of the project, we explore how to develop integration tests using Jest. This tests are developed in `src/test/server_app3`.

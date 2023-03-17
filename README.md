@@ -48,3 +48,5 @@ On the other hand, the Chicago approach aims to test functionality of modules, s
 #### Integration tests
 
 In this part of the project, we explore how to develop integration tests using Jest. This tests are developed in `src/test/server_app3`.
+
+This tests cover only favourable use cases of how a user would interact with the different endpoints present in the app.

@@ -15,6 +15,9 @@ const config: Config.InitialOptions = {
         // `${baseTestDir}/server_app/**/*test.ts`,
         // `${baseTestDir}/server_app2/**/*test.ts`,
         `${baseTestDir}/server_app3/**/*test.ts`,
+    ],
+    setupFiles: [
+        '<rootDir>/src/test/server_app3/utils/config.ts'
     ]
 }
 

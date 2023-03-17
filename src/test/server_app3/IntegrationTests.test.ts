@@ -13,6 +13,7 @@ describe('Server app Integration tests', () => {
     beforeAll(() => {
         server = new Server();
         server.startServer();
+        console.log(`connecting to address: ${process.env.HOST}:${process.env.PORT}`)
     });
 
     afterAll(() => {

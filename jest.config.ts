@@ -12,8 +12,8 @@ const config: Config.InitialOptions = {
         `${baseDir}/**/*.ts`
     ],
     testMatch:[
-        // `${baseTestDir}/server_app/**/*test.ts`,
-        // `${baseTestDir}/server_app2/**/*test.ts`,
+        `${baseTestDir}/server_app/**/*test.ts`,
+        `${baseTestDir}/server_app2/**/*test.ts`,
         `${baseTestDir}/server_app3/**/*test.ts`,
     ],
     setupFiles: [

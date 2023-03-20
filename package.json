@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "ts-node src/app/server_app/Launcher.ts"
+    "start": "ts-node src/app/server_app/Launcher.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
